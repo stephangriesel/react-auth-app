@@ -17,9 +17,12 @@ class Members extends Component {
 
   render() {
       console.log(this.state);
+      const { currentUserEmail, currentUserName } = this.state;
     return (
       <div>
-        
+        <h1>Welcome { currentUserName } </h1>
+        <p>Email: { currentUserEmail } </p>
+        <p>Your have successfully logged in.</p>
       </div>
     )
   }
